@@ -1,0 +1,592 @@
+<html>
+<head>
+	<title>Главная страница</title>
+	<style>
+		#back {
+			position: absolute;
+			height: 1012px;
+			width: 1300px;
+			z-index: -2;
+			margin-top: 258px;
+		}
+
+		#white {
+			position: absolute;
+			height: 1012px;
+			width: 834px;
+			z-index: -1;
+			opacity: 75%;
+			margin-top: 258px;
+			margin-left: 233px;
+		}
+
+		#top {
+			position: absolute;
+			height: 258px;
+			width: 1300px;
+			z-index: -2;
+		}
+
+		#bottom {
+			position: absolute;
+			height: 189px;
+			width: 1300px;
+			z-index: -2;
+			margin-top: 1270px;
+		}
+
+		#logo {
+			position: absolute;
+			height: 258px;
+			width: 298px;
+			z-index: 10;
+			margin-left: 503px;
+		}
+
+		#left {
+			position: absolute;
+			height: 258px;
+			width: 344px;
+			z-index: -1;
+			margin-left: 50px;
+		}
+		
+		#right {
+			position: absolute;
+			height: 258px;
+			width: 344px;
+			z-index: -1;
+			margin-left: 906px;
+		}
+
+		#menu {
+			position: absolute;
+			width: 600px;
+			z-index: 10;
+			margin-top: 258px;
+			margin-left: 457px;
+			display: flex;
+			border: 5px;
+			background-color: #FACD91;
+			border-style: ridge;
+			border-color: #6D000E;
+			box-shadow: -3px 3px 3px 0px gray;
+		}
+
+		#submenu_1 {
+			background: linear-gradient(to top, #FFFFFF, #FF8A00);
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 26;
+			height: 30px;
+			width: 120px;
+			border: 0px;
+			border-right: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none; 
+			margin: 0; 
+			padding-left: 0;
+			padding-top: 0px;
+		}
+
+		#submenu_2 {
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 26;
+			height: 30px;
+			width: 120px;
+			border: 0px;
+			border-right: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none; 
+			margin: 0; 
+			padding-left: 0;
+			padding-top: 0px;
+		}
+
+		#submenu_3 {
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 26;
+			height: 30px;
+			width: 120px;
+			border: 0px;
+			border-right: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none;
+			padding-top: 0px; 
+			margin: 0; 
+			padding-left: 0;
+		}
+
+		#submenu_4 {
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 26;
+			height: 30px;
+			width: 120px;
+			border: 0px;
+			border-right: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none; 
+			margin: 0; 
+			padding-top: 0px;
+			padding-left: 0;
+		}
+
+		#submenu_5 {
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 26;
+			height: 30px;
+			width: 120px;
+			border: 0px;
+			border-right: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none; 
+			margin: 0; 
+			padding-top: 0px;
+			padding-left: 0;
+		}
+
+		#link_1 {
+			text-decoration: none;
+		}
+
+		#link_2 {
+			text-decoration: none;
+		}
+
+		#link_3 {
+			text-decoration: none;
+		}
+
+		#link_4 {
+			text-decoration: none;
+		}
+
+		#link_5 {
+			text-decoration: none;	     
+		}
+
+		body {
+			background: black; 
+			margin: 0;
+			padding: 0;
+		} 
+
+		a {
+			color: black; 
+		}
+
+		a:visited {
+			color: black; 
+		}
+
+		a:active {
+			color: darkgreen; 
+		}
+		
+		ul:hover {
+			background: linear-gradient(to top, #FFFFFF, #FFB660);
+		}
+
+		
+
+		#subsubmenu_1 {
+			background-color: #FACD91;
+			position: static;
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 20;
+			height: 25px;
+			width: 120px;
+			border: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none; 
+			margin: 0; 
+			padding-top: 5px;
+			z-index: 20;
+			line-height: 1;
+		}
+
+		#subsubmenu_2 {
+			background-color: #FACD91;
+			position: static;
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 20;
+			height: 65px;
+			width: 120px;
+			border: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none; 
+			margin: 0; 
+			padding-top: 5px;
+			z-index: 20;
+			line-height: 1;
+		}
+
+		#subsubmenu_3 {
+			background-color: #FACD91;
+			position: static;
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 20;
+			height: 45px;
+			width: 120px;
+			border: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none; 
+			margin: 0; 
+			padding-top: 5px;
+			z-index: 20;
+			line-height: 1;
+		}
+
+		#sublink_1 {
+			text-decoration: none;
+		}
+
+		#sublink_2 {
+			text-decoration: none;
+		}
+
+		#sublink_3 {
+			text-decoration: none;
+		}
+
+		li {							
+			visibility: hidden;
+		}
+
+		ul#submenu_2:hover > li { 
+			visibility: visible;
+		}								
+
+		li:hover {
+			background: linear-gradient(to top, #FFFFFF, #FFB660);
+		}
+
+		#mainpage {
+			background: linear-gradient(to top, #FFFFFF, #76B649);
+			display: inline-block;
+			width: 200px;
+			height: 60px;
+			border-color: #a8e4a0;
+			margin-top: 258px;
+			margin-left: 233px;
+			border: 5px;
+			border-style: ridge;
+			border-color: darkgreen;
+			padding-top: 30px;
+			position: absolute;
+			text-align: center;
+			font-size: 26;
+			font-family: buxton sketch;
+			box-shadow: 3px 3px 3px 0px gray;
+		}
+
+		#search {
+			position: absolute;
+			top: 380px;
+			left: 252px;
+			padding: 10px;
+			position: absolute;
+		}
+
+		form.example input[type=text] {
+			font-family: buxton sketch;
+			padding: 10px;
+			font-size: 20px;
+			border: 1px solid #6D000E;
+			float: left;
+			height: 30px;
+			width: 180px;
+			box-shadow: inset 1px 1px 4px 1px gray; 
+		}	
+
+		form.example button:hover {
+			background: #9ACD32;
+		}
+
+		form.example::after {
+			content: "";
+			background: #f1f1f1;
+		}
+
+		form.example button {
+			float: left;
+			width: 70px;
+			height: 30px;
+			padding: 10px;
+			background: #FACD91;
+			font-size: 17px;
+			border: 1px solid #6D000E;
+			position: absolute;
+			bottom: -3px;
+			left: 120px;
+			box-shadow: 2px 2px 2px 0px gray;
+		}
+
+		form.example button:hover {
+			background: linear-gradient(to top, #FFFFFF, #FFB660);
+		}
+
+		form.example::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		#maintext {
+			position: absolute;
+			text-align: justify;
+			font-family: buxton sketch;
+			font-size: 30;
+			z-index: 5;
+			top:290px;
+			line-height: 1;
+			left:480px;
+			width: 562px;
+		}
+
+		
+.slide {
+        opacity: 0;
+
+    }
+	input[name=a] {
+			display: none;
+		}
+	.slide {
+			display: none;
+		}
+
+    .slide>img {
+        position: absolute;
+        display: block;
+        width: 730px;
+        height: 364px;
+        left: 285px;
+        top:650px;
+        cursor: pointer;
+    
+    }
+
+    #three:checked~#slider>.slide:nth-child(3), #one:checked~#slider>.slide:nth-child(1), 
+    #two:checked~#slider>.slide:nth-child(2), #four:checked~#slider>.slide:nth-child(4), 
+    #five:checked~#slider>.slide:nth-child(5) {
+    
+        opacity: 1;
+    }
+    
+    #three:checked~#slider>.slide:nth-child(3), #one:checked~#slider>.slide:nth-child(1), 
+    #two:checked~#slider>.slide:nth-child(2), #four:checked~#slider>.slide:nth-child(4), 
+    #five:checked~#slider>.slide:nth-child(5) {
+        transition: 0.3s;
+    }
+    .prevSlide::before {
+        position: absolute;
+        content: "";                          /* это левая стрелка*/
+        display: block;
+        height: 0;
+        width: 0;
+        border-top: 20px solid transparent;
+        border-right: 40px solid #ed760e;
+        border-bottom: 20px solid transparent;
+        left: 240px;
+        top: 800px;
+        cursor: pointer;
+
+    }
+    .prevSlide:hover::before {
+        border-top: 20px solid transparent;
+        border-right: 40px solid #834d18;
+        border-bottom: 20px solid transparent;
+        transition: 0.5s;
+     }
+    .nextSlide::before {
+        position: absolute;
+        content: "";
+        display: block;                             /* это правая стрелка*/
+        height: 0;
+        width: 0;
+        border-top: 20px solid transparent;
+        border-left: 40px solid #ed760e;
+        border-bottom: 20px solid transparent;
+        left: 1020px;
+        top: 810px;
+        cursor: pointer;
+    }
+    .nextSlide:hover::before {
+        border-top: 20px solid transparent;
+        border-left: 40px solid #834d18;
+        border-bottom: 20px solid transparent;
+        transition: 0.5s;
+    }
+    
+    .pins>label {
+			border-radius: 50%;
+			background-color: #80461b;
+			display: block;
+			width: 10px;
+			height: 10px;
+			float: left;
+			margin: 10px;
+		}
+	.pins {
+			margin-left: calc(50%);
+         }
+    #three:checked~#slider>.pins>label[for=three], #one:checked~#slider>.pins>label[for=one],
+    #two:checked~#slider>.pins>label[for=two], #four:checked~#slider>.pins>label[for=four],
+    #five:checked~#slider>.pins>label[for=five] {
+      background-color: #ed760e;
+    }
+    .slide {
+			transition: 0.1s;
+			display: block;
+			position: absolute;
+			opacity: 0;
+			z-index: 0;
+			left: 0;
+			right: 0;
+		}
+
+		#one:checked~#slider>.slide:nth-child(1),
+		#two:checked~#slider>.slide:nth-child(2),
+		#three:checked~#slider>.slide:nth-child(3),
+		#four:checked~#slider>.slide:nth-child(4),
+		#five:checked~#slider>.slide:nth-child(5) {
+			z-index: 1;
+			opacity: 1;
+		}
+		.pins {
+			position: absolute;
+			top: 30vw;
+            left: -7vw;
+            display: none;
+		}
+		#slider {
+			position: relative;
+		}
+
+#Gotic{
+	        position: absolute;
+			text-align: justify;
+			font-family: buxton sketch;
+			font-size: 30;
+			z-index: 5;
+			top:1000px;
+			line-height: 1;
+			left:480px;
+			width: 562px;
+}
+		
+	</style>
+</head>
+<body>
+
+	<div id="top">
+		<img src="top.jpg"/>
+	</div>
+	<div id="back">
+		<img src="back.jpg"/>
+	</div>
+	<div id="white">
+		<img src="white.jpg"/>
+	</div>
+	<div id="bottom">
+		<img src="bottom.jpg"/>
+	</div>
+	<div id="logo"><a href="main page.html">
+		<img src="logo.jpg"/></a>
+	</div>
+	<div id="left">
+		<img src="left.jpg"/>
+	</div>
+	<div id="right">
+		<img src="right.jpg"/>
+	</div>
+
+	<div id="menu">
+		<ul id="submenu_1"><a href="About us.html" id="link_1">О нас</a></ul>
+		<ul id="submenu_2"><a href="Excursions.html" id="link_2">Экскурсии</a>
+			<li id="subsubmenu_1"><a href="Guides.html" id="sublink_1">Экскурсоводы</a></li>
+			<li id="subsubmenu_2"><a href="Theartoftheearlymiddleages.html" id="sublink_2">Искусство раннего средневековья</a></li>
+			<li id="subsubmenu_3"><a href=ArtofRenaissance.html id="sublink_3">Искусство возрождения</a></li>
+		</ul>
+		<ul id="submenu_3"><a href="Collections.html" id="link_3">Коллекция</a></ul>
+		<ul id="submenu_4"><a href="Galery.html" id="link_4">Галерея</a></ul>
+		<ul id="submenu_5"><a href="Prices.html" id="link_5">Цены</a></ul>
+	</div>
+
+	<div id="mainpage">Главная страница</div>
+	
+	<div id="search">
+		<form class="example" action="/action_page.php">
+			<input type="text" placeholder="Поиск" name="search">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+	</div>  
+
+	<div id="maintext"><h1 align="left">Музей</h1>
+		<h1 align="center">изобразительных </h1>
+		<h1 align="right">искусств</h1>
+	</div>
+
+<input type="radio" id="one" name="a" checked>
+	<input type="radio" id="two" name="a">
+	<input type="radio" id="three" name="a"> 
+	<input type="radio" id="four" name="a">
+	<input type="radio" id="five" name="a">
+	<div id="slider">
+		<section class="slide">
+			<img src="one.jpg">
+			<label for="five" class="prevSlide"></label>
+			<label for="two" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="two.jpg">
+			<label for="one" class="prevSlide"></label>
+			<label for="three" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="three.jpg">
+			<label for="two" class="prevSlide"></label>
+			<label for="four" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="four.jpg">
+			<label for="three" class="prevSlide"></label>
+			<label for="five" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="five.jpg">
+			<label for="four" class="prevSlide"></label>
+			<label for="one" class="nextSlide"></label>
+		</section>
+		<div class="pins">
+			<label for="one"></label>
+			<label for="two"></label>
+			<label for="three"></label>
+			<label for="four"></label>
+			<label for="five"></label>
+		</div>
+	</div>
+	
+	
+	<div id="Gotic"><h1 align="left">Готический стиль</h1>
+		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,568 @@
+<html>
+<head>
+	<title>Экскурсии</title>
+	<style>
+		#back {
+			position: absolute;
+			height: 1012px;
+			width: 1300px;
+			z-index: -2;
+			margin-top: 258px;
+		}
+
+		#white {
+			position: absolute;
+			height: 1012px;
+			width: 834px;
+			z-index: -1;
+			opacity: 75%;
+			margin-top: 258px;
+			margin-left: 233px;
+		}
+
+		#top {
+			position: absolute;
+			height: 258px;
+			width: 1300px;
+			z-index: -2;
+		}
+
+		#bottom {
+			position: absolute;
+			height: 189px;
+			width: 1300px;
+			z-index: -2;
+			margin-top: 1270px;
+		}
+
+		#logo {
+			position: absolute;
+			height: 258px;
+			width: 298px;
+			z-index: 10;
+			margin-left: 503px;
+		}
+
+		#left {
+			position: absolute;
+			height: 258px;
+			width: 344px;
+			z-index: -1;
+			margin-left: 50px;
+		}
+		
+		#right {
+			position: absolute;
+			height: 258px;
+			width: 344px;
+			z-index: -1;
+			margin-left: 906px;
+		}
+
+		#menu {
+			position: absolute;
+			width: 600px;
+			z-index: 10;
+			margin-top: 258px;
+			margin-left: 457px;
+			display: flex;
+			border: 5px;
+			background-color: #FACD91;
+			border-style: ridge;
+			border-color: #6D000E;
+			box-shadow: -3px 3px 3px 0px gray;
+		}
+
+		#submenu_1 {
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 26;
+			height: 30px;
+			width: 120px;
+			border: 0px;
+			border-right: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none; 
+			margin: 0; 
+			padding-left: 0;
+			padding-top: 0px;
+		}
+
+		#submenu_2 {
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 26;
+			height: 30px;
+			width: 120px;
+			border: 0px;
+			border-right: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none; 
+			margin: 0; 
+			padding-left: 0;
+			padding-top: 0px;
+		}
+
+		#submenu_3 {
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 26;
+			height: 30px;
+			width: 120px;
+			border: 0px;
+			border-right: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none;
+			padding-top: 0px; 
+			margin: 0; 
+			padding-left: 0;
+		}
+
+		#submenu_4 {
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 26;
+			height: 30px;
+			width: 120px;
+			border: 0px;
+			border-right: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none; 
+			margin: 0; 
+			padding-top: 0px;
+			padding-left: 0;
+		}
+
+		#submenu_5 {
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 26;
+			height: 30px;
+			width: 120px;
+			border: 0px;
+			border-right: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none; 
+			margin: 0; 
+			padding-top: 0px;
+			padding-left: 0;
+		}
+
+		#link_1 {
+			text-decoration: none;
+		}
+
+		#link_2 {
+			text-decoration: none;
+		}
+
+		#link_3 {
+			text-decoration: none;
+		}
+
+		#link_4 {
+			text-decoration: none;
+		}
+
+		#link_5 {
+			text-decoration: none;	     
+		}
+
+		body {
+			background: black; 
+			margin: 0;
+			padding: 0;
+		} 
+
+		a {
+			color: black; 
+		}
+
+		a:visited {
+			color: black; 
+		}
+
+		a:active {
+			color: darkgreen; 
+		}
+		
+		ul:hover {
+			background: linear-gradient(to top, #FFFFFF, #FFB660);
+		}
+
+		#submenu_2 {
+			background: linear-gradient(to top, #FFFFFF, #FF8A00);
+		}			
+
+		#subsubmenu_1 {
+			background-color: #FACD91;
+			position: static;
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 20;
+			height: 25px;
+			width: 120px;
+			border: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none; 
+			margin: 0; 
+			padding-top: 5px;
+			z-index: 20;
+			line-height: 1;
+		}
+
+		#subsubmenu_2 {
+			background-color: #FACD91;
+			position: static;
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 20;
+			height: 65px;
+			width: 120px;
+			border: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none; 
+			margin: 0; 
+			padding-top: 5px;
+			z-index: 20;
+			line-height: 1;
+		}
+
+		#subsubmenu_3 {
+			background-color: #FACD91;
+			position: static;
+			text-align: center;
+			font-family: buxton sketch;
+			font-size: 20;
+			height: 45px;
+			width: 120px;
+			border: 1px;
+			border-color: #6D000E;
+			border-style: solid;
+			list-style: none; 
+			margin: 0; 
+			padding-top: 5px;
+			z-index: 20;
+			line-height: 1;
+		}
+
+		#sublink_1 {
+			text-decoration: none;
+		}
+
+		#sublink_2 {
+			text-decoration: none;
+		}
+
+		#sublink_3 {
+			text-decoration: none;
+		}
+
+		li {							
+			visibility: hidden;
+		}
+
+		ul#submenu_2:hover > li { 
+			visibility: visible;
+		}								
+
+		li:hover {
+			background: linear-gradient(to top, #FFFFFF, #FFB660);
+		}
+
+		#gide {
+			background: linear-gradient(to top, #FFFFFF, #76B649);
+			display: inline-block;
+			width: 200px;
+			height: 60px;
+			border-color: #a8e4a0;
+			margin-top: 258px;
+			margin-left: 233px;
+			border: 5px;
+			border-style: ridge;
+			border-color: darkgreen;
+			padding-top: 30px;
+			position: absolute;
+			text-align: center;
+			font-size: 26;
+			font-family: buxton sketch;
+			box-shadow: 3px 3px 3px 0px gray;
+		}
+
+		#search {
+			position: absolute;
+			top: 380px;
+			left: 252px;
+			padding: 10px;
+			position: absolute;
+		}
+
+		form.example input[type=text] {
+			font-family: buxton sketch;
+			padding: 10px;
+			font-size: 20px;
+			border: 1px solid #6D000E;
+			float: left;
+			height: 30px;
+			width: 180px;
+			box-shadow: inset 1px 1px 4px 1px gray; 
+		}	
+
+		form.example button:hover {
+			background: #9ACD32;
+		}
+
+		form.example::after {
+			content: "";
+			background: #f1f1f1;
+		}
+
+		form.example button {
+			float: left;
+			width: 70px;
+			height: 30px;
+			padding: 10px;
+			background: #FACD91;
+			font-size: 17px;
+			border: 1px solid #6D000E;
+			position: absolute;
+			bottom: -3px;
+			left: 120px;
+			box-shadow: 2px 2px 2px 0px gray;
+		}
+
+		form.example button:hover {
+			background: linear-gradient(to top, #FFFFFF, #FFB660);
+		}
+
+		form.example::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		#maintext {
+			position: absolute;
+			text-align: justify;
+			font-family: buxton sketch;
+			font-size: 25;
+			z-index: 5;
+			top:340px;
+			line-height: 1;
+			left:476px;
+			width: 562px;
+		}
+
+		#maintext2 {
+			text-align: justify;
+			width: 778px;
+			font-family: buxton sketch;
+			font-size: 25;
+			z-index: 5;
+			position: absolute;
+			top:475px;
+			line-height: 1;
+			left:260px;
+		}
+
+
+		#leftimagemain {
+			position: absolute;
+			margin-left:260px;
+			margin-top: 670px;
+			border: 1px;
+			border-style: solid;
+		}
+
+		#centreimagemain {
+			position: absolute;
+			margin-left:534px;
+			margin-top: 670px;
+			border: 1px;
+			border-style: solid;
+		}
+
+		#rightimagemain {
+			position: absolute;
+			margin-left:807px;
+			margin-top: 670px;
+			border: 1px;
+			border-style: solid;
+		}
+
+		#namespace1 {
+			position: absolute;
+			margin-left:260px;
+			margin-top:832px;
+			text-align:center;
+			font-family: buxton sketch;
+			font-size:27;
+			height: 50px;
+			width: 230px;
+			border: 1px;
+			border-style: solid;
+			padding-top: 15;
+		}
+
+		#namespace2 {
+			position: absolute;
+			margin-left:534px;
+			margin-top:832px;
+			text-align:center;
+			font-family: buxton sketch;
+			font-size:27;
+			height: 65px;
+			width: 230px;
+			border: 1px;
+			border-style: solid;
+		}
+
+		#namespace3 {
+			position: absolute;
+			margin-left:807px;
+			margin-top:832px;
+			text-align:center;
+			font-family: buxton sketch;
+			font-size:27;
+			height: 65px;
+			width: 230px;
+			border: 1px;
+			border-style: solid;
+		}
+
+		#namespace1:hover {
+			background: linear-gradient(to top, #FFFFFF, #FFB660);
+		}
+
+		#namespace2:hover {
+			background: linear-gradient(to top, #FFFFFF, #FFB660);
+		}
+
+		#namespace3:hover {
+			background: linear-gradient(to top, #FFFFFF, #FFB660);
+		}
+
+		#textspace1 {
+			position: absolute;
+			margin-left:260px;
+			margin-top:898px;
+			text-align:center;
+			font-family: buxton sketch;
+			font-size:20;
+			height: 340px;
+			width: 220px;
+			border: 1px;
+			border-style: solid;
+			line-height: 1;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+		#textspace2 {
+			position: absolute;
+			margin-left:534px;
+			margin-top:898px;
+			text-align:center;
+			font-family: buxton sketch;
+			font-size:20;
+			height: 340px;
+			width: 220px;
+			border: 1px;
+			border-style: solid;
+			line-height: 1;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+		#textspace3 {
+			position: absolute;
+			margin-left:807px;
+			margin-top:898px;
+			text-align:center;
+			font-family: buxton sketch;
+			font-size:20;
+			height: 340px;
+			width: 220px;
+			border: 1px;
+			border-style: solid;
+			line-height: 1;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="top">
+		<img src="top.jpg"/>
+	</div>
+	<div id="back">
+		<img src="back.jpg"/>
+	</div>
+	<div id="white">
+		<img src="white.jpg"/>
+	</div>
+	<div id="bottom">
+		<img src="bottom.jpg"/>
+	</div>
+	<div id="logo"><a href="main page.html">
+		<img src="logo.jpg"/></a>
+	</div>
+	<div id="left">
+		<img src="left.jpg"/>
+	</div>
+	<div id="right">
+		<img src="right.jpg"/>
+	</div>
+
+	<div id="menu">
+		<ul id="submenu_1"><a href="About us.html" id="link_1">О нас</a></ul>
+		<ul id="submenu_2"><a href="Excursions.html" id="link_2">Экскурсии</a>
+			<li id="subsubmenu_1"><a href="Guides.html" id="sublink_1">Экскурсоводы</a></li>
+			<li id="subsubmenu_2"><a href="Theartoftheearlymiddleages.html" id="sublink_2">Искусство раннего средневековья</a></li>
+			<li id="subsubmenu_3"><a href=ArtofRenaissance.html id="sublink_3">Искусство возрождения</a></li>
+		</ul>
+		<ul id="submenu_3"><a href="Collections.html" id="link_3">Коллекция</a></ul>
+		<ul id="submenu_4"><a href="Galery.html" id="link_4">Галерея</a></ul>
+		<ul id="submenu_5"><a href="Prices.html" id="link_5">Цены</a></ul>
+	</div>
+
+	<div id="gide">Экскурсии</div>
+	
+	<div id="search">
+		<form class="example" action="/action_page.php">
+			<input type="text" placeholder="Поиск" name="search">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+	</div>  
+
+	<div id="maintext"><p>Экскурсии, знакомящие с произведениями изобрази­тельного искусства, делятся на экскурсии с показом про­изведений живописи, монументальной скульптуры и про­изведений декоративно-прикладного искусства.
+	</p></div>
+
+	<div id="maintext2"><p> Экскурсии с показом произведений живописи прово­дятся по картинным галереям и историко-художественным музеям. Экскурсии с показом произведений скульптуры могут быть обзорными, тематическими и знакомящими со скульптурой современных мемориальных комплексов и некрополей. В искусствоведческих экскурсиях наряду с живописью и скульптурой объектами показа являются произведения декоративно-прикладного искусства.</p></div>
+
+	<div id="leftimagemain"> <img src="leftimagemain.png" width="230" height="161">
+	</div>
+	<div id="centreimagemain"> <img src="centreimagemain.png" width="230" height="161">
+	</div>
+	<div id="rightimagemain"> <img src="rightimagemain.jpg" width="230" height="161">
+	</div>
+
+	<div id="namespace1"><a href="Guides.html" id="link_6">Наши экскурсоводы</a></div>
+	<div id="namespace2"><a href="The art of the early middle ages.html" id="link_7">Искусство Раннего Средневековья</div>
+	<div id="namespace3"><a href="Art of Renaissance.html" id="link_8">Искусство Возрождения</div>	
+
+	<div id="textspace1"><br>Любой вид искусства обладает способностью непосредственного идейно-художественного воздействия на слушателей и зрителей. Каким будет это воздействие, как воспримет произведение искусства экскурсант, зависит, с одной сто­роны, от его подготовленности, возраста, уровня знаний, художественного вкуса, а с другой — от рассказа экскур­совода.</div>
+	<div id="textspace2"><br>Особенности средневекового искусства Западной и Центральной Европы определялись своеобразием процесса формирования феодального общества на территории бывшей Западной Римской империи. Он протекал иным путем, чем на Востоке. Гибель рабовладельческого строя была ускорена нашествием в конце 4 века варварских племен.</div>
+	<div id="textspace3"><br>Первые предвестники искусства Возрождения появились в Италии в XIV веке. Художники этого времени, Пьетро Каваллини (1259—1344), Симоне Мартини (1284—1344) и (в первую очередь) Джотто при создании полотен традиционной религиозной тематики отталкивались от традиции готики, однако начали использовать новые художественные приёмы.</div>
+
+</body>
+</html>

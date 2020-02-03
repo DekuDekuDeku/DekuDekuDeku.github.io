@@ -1,0 +1,439 @@
+<html>
+<head>
+    <title>Искусство раннего средневековья</title>
+    <style>
+        #back {
+            position: absolute;
+            height: 1012px;
+            width: 1300px;
+            z-index: -2;
+            margin-top: 258px;
+        }
+
+        #white {
+            position: absolute;
+            height: 1012px;
+            width: 834px;
+            z-index: -1;
+            opacity: 75%;
+            margin-top: 258px;
+            margin-left: 233px;
+        }
+
+        #top {
+            position: absolute;
+            height: 258px;
+            width: 1300px;
+            z-index: -2;
+        }
+
+        #bottom {
+            position: absolute;
+            height: 189px;
+            width: 1300px;
+            z-index: -2;
+            margin-top: 1270px;
+        }
+
+        #logo {
+            position: absolute;
+            height: 258px;
+            width: 298px;
+            z-index: 10;
+            margin-left: 503px;
+        }
+
+        #left {
+            position: absolute;
+            height: 258px;
+            width: 344px;
+            z-index: -1;
+            margin-left: 50px;
+        }
+        
+        #right {
+            position: absolute;
+            height: 258px;
+            width: 344px;
+            z-index: -1;
+            margin-left: 906px;
+        }
+
+        #menu {
+            position: absolute;
+            width: 600px;
+            z-index: 10;
+            margin-top: 258px;
+            margin-left: 457px;
+            display: flex;
+            border: 5px;
+            background-color: #FACD91;
+            border-style: ridge;
+            border-color: #6D000E;
+            box-shadow: -3px 3px 3px 0px gray;
+        }
+
+        #submenu_1 {
+            text-align: center;
+            font-family: buxton sketch;
+            font-size: 26;
+            height: 30px;
+            width: 120px;
+            border: 0px;
+            border-right: 1px;
+            border-color: #6D000E;
+            border-style: solid;
+            list-style: none; 
+            margin: 0; 
+            padding-left: 0;
+            padding-top: 0px;
+        }
+
+        #submenu_2 {
+            text-align: center;
+            font-family: buxton sketch;
+            font-size: 26;
+            height: 30px;
+            background: linear-gradient(to top, #FFFFFF, #FF8A00);
+            width: 120px;
+            border: 0px;
+            border-right: 1px;
+            border-color: #6D000E;
+            border-style: solid;
+            list-style: none; 
+            margin: 0; 
+            padding-left: 0;
+            padding-top: 0px;
+        }
+
+        #submenu_3 {
+            text-align: center;
+            font-family: buxton sketch;
+            font-size: 26;
+            height: 30px;
+            width: 120px;
+            border: 0px;
+            border-right: 1px;
+            border-color: #6D000E;
+            border-style: solid;
+            list-style: none;
+            padding-top: 0px; 
+            margin: 0; 
+            padding-left: 0;
+        }
+
+        #submenu_4 {
+            text-align: center;
+            font-family: buxton sketch;
+            font-size: 26;
+            height: 30px;
+            width: 120px;
+            border: 0px;
+            border-right: 1px;
+            border-color: #6D000E;
+            border-style: solid;
+            list-style: none; 
+            margin: 0; 
+            padding-top: 0px;
+            padding-left: 0;
+            
+        }
+
+        #submenu_5 {
+            text-align: center;
+            font-family: buxton sketch;
+            font-size: 26;
+            height: 30px;
+            width: 120px;
+            border: 0px;
+           
+            border-right: 1px;
+            border-color: #6D000E;
+            border-style: solid;
+            list-style: none; 
+            margin: 0; 
+            padding-top: 0px;
+            padding-left: 0;
+        }
+
+        #link_1 {
+            text-decoration: none;
+        }
+
+        #link_2 {
+            text-decoration: none;
+        }
+
+        #link_3 {
+            text-decoration: none;
+        }
+
+        #link_4 {
+            text-decoration: none;
+        }
+
+        #link_5 {
+            text-decoration: none;       
+        }
+
+        body {
+            background: black; 
+            margin: 0;
+            padding: 0;
+        } 
+
+        a {
+            color: black; 
+        }
+
+        a:visited {
+            color: black; 
+        }
+
+        a:active {
+            color: darkgreen; 
+        }
+        
+        ul:hover {
+            background: linear-gradient(to top, #FFFFFF, #FFB660);
+        }
+
+        
+
+        #subsubmenu_1 {
+            background-color: #FACD91;
+            position: static;
+            text-align: center;
+            font-family: buxton sketch;
+            font-size: 20;
+            height: 25px;
+            width: 120px;
+            
+            border: 1px;
+            border-color: #6D000E;
+            border-style: solid;
+            list-style: none; 
+            margin: 0; 
+            padding-top: 5px;
+            z-index: 20;
+            line-height: 1;
+        }
+
+        #subsubmenu_2 {
+            background-color: #FACD91;
+            position: static;
+            text-align: center;
+            font-family: buxton sketch;
+            font-size: 20;
+            height: 65px;
+            background: linear-gradient(to top, #FFFFFF, #FF8A00);
+            width: 120px;
+            border: 1px;
+            border-color: #6D000E;
+            border-style: solid;
+            list-style: none; 
+            margin: 0; 
+            padding-top: 5px;
+            z-index: 20;
+            line-height: 1;
+        }
+
+        #subsubmenu_3 {
+            background-color: #FACD91;
+            position: static;
+            text-align: center;
+            font-family: buxton sketch;
+            font-size: 20;
+            height: 45px;
+            width: 120px;
+            border: 1px;
+            border-color: #6D000E;
+            border-style: solid;
+            list-style: none; 
+            margin: 0; 
+            padding-top: 5px;
+            z-index: 20;
+            line-height: 1;
+        }
+
+        #sublink_1 {
+            text-decoration: none;
+        }
+
+        #sublink_2 {
+            text-decoration: none;
+        }
+
+        #sublink_3 {
+            text-decoration: none;
+        }
+
+        li {                            
+            visibility: hidden;
+        }
+
+        ul#submenu_2:hover > li { 
+            visibility: visible;
+        }                              
+
+        li:hover {
+            background: linear-gradient(to top, #FFFFFF, #FFB660);
+        }
+
+        #art {
+            background: linear-gradient(to top, #FFFFFF, #76B649);
+            display: inline-block;
+            width: 200px;
+            height: 60px;
+            border-color: #a8e4a0;
+            margin-top: 258px;
+            margin-left: 233px;
+            border: 5px;
+            border-style: ridge;
+            border-color: darkgreen;
+            padding-top: 30px;
+            position: absolute;
+            text-align: center;
+            font-size: 26;
+            font-family: buxton sketch;
+            box-shadow: 3px 3px 3px 0px gray;
+        }
+
+        #search {
+            position: absolute;
+            top: 380px;
+            left: 252px;
+            padding: 10px;
+            position: absolute;
+        }
+
+        form.example input[type=text] {
+            font-family: buxton sketch;
+            padding: 10px;
+            font-size: 20px;
+            border: 1px solid #6D000E;
+            float: left;
+            height: 30px;
+            width: 180px;
+            box-shadow: inset 1px 1px 4px 1px gray; 
+        }   
+
+        form.example button:hover {
+            background: #9ACD32;
+        }
+
+        form.example::after {
+            content: "";
+            background: #f1f1f1;
+        }
+
+        form.example button {
+            float: left;
+            width: 70px;
+            height: 30px;
+            padding: 10px;
+            background: #FACD91;
+            font-size: 17px;
+            border: 1px solid #6D000E;
+            position: absolute;
+            bottom: -3px;
+            left: 120px;
+            box-shadow: 2px 2px 2px 0px gray;
+        }
+
+        form.example button:hover {
+            background: linear-gradient(to top, #FFFFFF, #FFB660);
+        }
+
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        
+        #maintext {
+            position: absolute;
+            text-align: justify;
+            font-family: buxton sketch;
+            font-size: 40;
+            z-index: 5;
+            top:930px;
+            
+            line-height: 1;
+            left:270px;
+            width: 770px;
+            
+        }
+
+       
+       #middleart {
+            position: absolute;
+            margin-left:270px;
+            margin-top: 530px;
+            border: 1px;
+            border-style: solid;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+
+    <div id="top">
+        <img src="top.jpg"/>
+    </div>
+    <div id="back">
+        <img src="back.jpg"/>
+    </div>
+    <div id="white">
+        <img src="white.jpg"/>
+    </div>
+    <div id="bottom">
+        <img src="bottom.jpg"/>
+    </div>
+    <div id="logo"><a href="main page.html">
+        <img src="logo.jpg"/></a>
+    </div>
+    <div id="left">
+        <img src="left.jpg"/>
+    </div>
+    <div id="right">
+        <img src="right.jpg"/>
+    </div>
+
+    <div id="menu">
+        <ul id="submenu_1"><a href="About us.html" id="link_1">О нас</a></ul>
+        <ul id="submenu_2"><a href="Excursions.html" id="link_2">Экскурсии</a>
+           <li id="subsubmenu_1"><a href="Guides.html" id="sublink_1">Экскурсоводы</a></li>
+            <li id="subsubmenu_2"><a href="Theartoftheearlymiddleages.html" id="sublink_2">Искусство раннего средневековья</a></li>
+            <li id="subsubmenu_3"><a href=ArtofRenaissance.html id="sublink_3">Искусство возрождения</a></li>
+        </ul>
+        <ul id="submenu_3"><a href="Collections.html" id="link_3">Коллекция</a></ul>
+        <ul id="submenu_4"><a href="Galery.html" id="link_4">Галерея</a></ul>
+        <ul id="submenu_5"><a href="Prices.html" id="link_5">Цены</a></ul>
+    </div>
+
+    <div id="art">Искусство Раннего Средневековья</div>
+    
+    <div id="search">
+        <form class="example" action="/action_page.php">
+            <input type="text" placeholder="Поиск" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>  
+
+    
+<div id="maintext"><p>Особенности средневекового искусства Западной и Центральной Европы определялись своеобразием процесса формирования феодального общества на территории бывшей Западной Римской империи. Он протекал иным путем, чем на Востоке. Гибель рабовладельческого строя была ускорена нашествием в конце 4 века варварских племен.
+    </p></div>
+
+    
+
+    <div id="middleart"> <img src="middleart.jpg" width="777" height="432">
+    </div>
+     
+</div>
+</body>
+</html>
