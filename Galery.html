@@ -1,24 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Галерея</title>
     <style>
-        #back {
+          #back {
             position: absolute;
-            height: 1012px;
-            width: 1300px;
+            height: 1000px;
+            width: 100%;
             z-index: -2;
             margin-top: 258px;
+            margin-right: 10px;
+            overflow: hidden;
         }
-
-        #white {
+            #white {
             position: absolute;
-            height: 1012px;
-            width: 834px;
+            background-color: white;
+            border: solid white;
+            height: 994px;
+            width: 824px;
             z-index: -1;
             opacity: 75%;
             margin-top: 258px;
             margin-left: 233px;
         }
+
 
         #top {
             position: absolute;
@@ -300,7 +308,7 @@
         h1{
             font-size: 50;
             font-family: buxton sketch;
-            left: 560px;
+            left: 500px;
             top:330px;
             position: absolute;
         }
@@ -387,6 +395,13 @@
             border-style: solid;
         }
 
+        .scale {
+    transition: 0.5s; 
+   }
+   .scale:hover {
+    transform: scale(1.2); 
+   }
+
 
     </style>
 </head>
@@ -396,10 +411,10 @@
         <img src="top.jpg"/>
     </div>
     <div id="back">
-        <img src="back.jpg"/>
+        <img src="back2.jpg"/>
     </div>
     <div id="white">
-        <img src="white.jpg"/>
+        
     </div>
     <div id="bottom">
         <img src="bottom.jpg"/>
@@ -433,17 +448,17 @@
     
 <div id="maintext"><p>В этой подборке вы увидите фотографии музеев, архитектура которых так же впечатляет, как и хранящиеся в них экспонаты. Это не обязательно самые посещаемые и популярные музеи мира, но красота их экстерьеров и интерьеров, безусловно, впечатляет.
     </p></div>
-    <div id="firstimag"> <img src="firstimag.jpg" width="250" height="200"> </div>
-        <div id="secondimag"> <img src="secondimag.jpg" width="250" height="200"> </div>
-            <div id="thirdimag"> <img src="thirdimag.jpg" width="250" height="200"></div>
-                <div id="fourthimag"> <img src="fourthimag.jpg" width="250" height="200"></div>
-                <div id="fifthimag"> <img src="fifthimag.jpg" width="250" height="200"></div>
-                <div id="siximag"> <img src="siximag.jpeg" width="250" height="200"></div>
-                <div id="sevenimag"> <img src="sevenimag.jpg" width="250" height="200"></div>
+    <div id="firstimag">  <img src="firstimag.jpg" width="250" height="200" alt="" class="scale"> </div>
+        <div id="secondimag"> <img src="secondimag.jpg" width="250" height="200" alt="" class="scale"> </div>
+            <div id="thirdimag"> <img src="thirdimag.jpg" width="250" height="200" alt="" class="scale"></div>
+                <div id="fourthimag"> <img src="fourthimag.jpg" width="250" height="200" alt="" class="scale"></div>
+                <div id="fifthimag"> <img src="fifthimag.jpg" width="250" height="200"alt="" class="scale"></div>
+                <div id="siximag"> <img src="siximag.jpeg" width="250" height="200" alt="" class="scale"></div>
+                <div id="sevenimag"> <img src="sevenimag.jpg" width="250" height="200"alt="" class="scale"></div>
 
-                <div id="eightimag"> <img src="eightimag.jpg" width="250" height="200"></div>
+                <div id="eightimag"> <img src="eightimag.jpg" width="250" height="200"alt="" class="scale"></div>
 
-                 <div id="nineimag"> <img src="nineimag.jpg" width="250" height="200"></div>
+                 <div id="nineimag"> <img src="nineimag.jpg" width="250" height="200" alt="" class="scale"></div>
 
 </body>
 </html>
