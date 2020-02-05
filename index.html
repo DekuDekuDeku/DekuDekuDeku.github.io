@@ -1,25 +1,29 @@
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Главная страница</title>
 	<style>
 		#back {
 			position: absolute;
-			height: 1012px;
-			width: 1300px;
+			height: 1000px;
+			width: 100%;
 			z-index: -2;
 			margin-top: 258px;
+			margin-right: 10px;
+			overflow: hidden;
 		}
 
 		#white {
-			position: absolute;
-			height: 1012px;
-			width: 834px;
-			z-index: -1;
-			opacity: 75%;
-			margin-top: 258px;
-			margin-left: 233px;
-		}
-
+            position: absolute;
+            background-color: white;
+            border: solid white;
+            height: 994px;
+            width: 824px;
+            z-index: -1;
+            opacity: 75%;
+            margin-top: 258px;
+            margin-left: 233px;
+        }
 		#top {
 			position: absolute;
 			height: 258px;
@@ -302,7 +306,7 @@
 			font-family: buxton sketch;
 			font-size: 30;
 			z-index: 5;
-			top:290px;
+			top:295px;
 			line-height: 1;
 			left:480px;
 			width: 562px;
@@ -323,11 +327,10 @@
     .slide>img {
         position: relative;
         display: block;
-       background-color: black;
-
+        text-align: center;
         height: 364px;
-        left: 285px;
-        top:650px;
+        left: 349px;
+        top:690px;
         cursor: pointer;
     
     }
@@ -354,7 +357,7 @@
         border-right: 40px solid #ed760e;
         border-bottom: 20px solid transparent;
         left: 240px;
-        top: 800px;
+        top: 850px;
         cursor: pointer;
 
     }
@@ -374,7 +377,7 @@
         border-left: 40px solid #ed760e;
         border-bottom: 20px solid transparent;
         left: 1020px;
-        top: 810px;
+        top: 851px;
         cursor: pointer;
     }
     .nextSlide:hover::before {
@@ -404,8 +407,10 @@
     .slide {
 			transition: 0.1s;
 			display: block;
+		
 			position: absolute;
 			opacity: 0;
+			text-align: center;
 			z-index: 0;
 			left: 0;
 			right: 0;
@@ -430,14 +435,14 @@
 		}
 
 #Gotic{
-	        position: absolute;
-			text-align: justify;
+	        position: relative;
+			text-align:center;
 			font-family: buxton sketch;
-			font-size: 30;
+			font-size: 50;
 			z-index: 5;
-			top:1000px;
+			top:1100px;
 			line-height: 1;
-			left:480px;
+			left:360px;
 			width: 562px;
 }
 		
@@ -449,10 +454,10 @@
 		<img src="top.jpg"/>
 	</div>
 	<div id="back">
-		<img src="back.jpg"/>
+		<img src="back2.jpg"/>
 	</div>
 	<div id="white">
-		<img src="white.jpg"/>
+		
 	</div>
 	<div id="bottom">
 		<img src="bottom.jpg"/>
@@ -529,7 +534,7 @@
 	</div>
 	
 	
-	<div id="Gotic"><h1 align="left">Готический стиль</h1>
+	<div id="Gotic">Готический стиль
 		
 	</div>
 
