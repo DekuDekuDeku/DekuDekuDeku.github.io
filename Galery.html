@@ -20,7 +20,8 @@
             background-color: white;
             border: solid white;
             height: 994px;
-            width: 824px;
+            width: 100%;
+            max-width: 824px;
             z-index: -1;
             opacity: 75%;
             margin-top: 258px;
@@ -31,14 +32,16 @@
         #top {
             position: absolute;
             height: 258px;
-            width: 1300px;
+            width: 100%;
+            max-width: 1300px;
             z-index: -2;
         }
 
         #bottom {
             position: absolute;
             height: 189px;
-            width: 1300px;
+            width: 100%;
+            max-width: 1300px;
             z-index: -2;
             margin-top: 1270px;
         }
@@ -46,7 +49,8 @@
         #logo {
             position: absolute;
             height: 258px;
-            width: 298px;
+            max-width: 298px;
+            width: 100%;
             z-index: 10;
             margin-left: 503px;
         }
@@ -54,7 +58,8 @@
         #left {
             position: absolute;
             height: 258px;
-            width: 344px;
+            max-width: 344px;
+            widows: 100%;
             z-index: -1;
             margin-left: 50px;
         }
@@ -62,14 +67,16 @@
         #right {
             position: absolute;
             height: 258px;
-            width: 344px;
+            max-width: 344px;
+            width: 100%;
             z-index: -1;
             margin-left: 906px;
         }
 
         #menu {
             position: absolute;
-            width: 600px;
+            max-width: 600px;
+            width: 100%;
             z-index: 10;
             margin-top: 258px;
             margin-left: 457px;
@@ -86,7 +93,8 @@
             font-family: buxton sketch;
             font-size: 26;
             height: 30px;
-            width: 120px;
+            
+           width: 120px;
             border: 0px;
             border-right: 1px;
             border-color: #6D000E;
@@ -102,7 +110,8 @@
             font-family: buxton sketch;
             font-size: 26;
             height: 30px;
-            width: 120px;
+           
+           width: 120px;
             border: 0px;
             border-right: 1px;
             border-color: #6D000E;
@@ -118,6 +127,7 @@
             font-family: buxton sketch;
             font-size: 26;
             height: 30px;
+            
             width: 120px;
             border: 0px;
             border-right: 1px;
@@ -134,6 +144,7 @@
             font-family: buxton sketch;
             font-size: 26;
             height: 30px;
+          
             width: 120px;
             border: 0px;
             border-right: 1px;
@@ -152,6 +163,7 @@
             font-family: buxton sketch;
             font-size: 26;
             height: 30px;
+            
             width: 120px;
             border: 0px;
             border-right: 1px;
@@ -214,7 +226,8 @@
             font-family: buxton sketch;
             font-size: 20;
             height: 25px;
-            width: 120px;
+            width: 100%;
+            max-width: 120px;
             border: 1px;
             border-color: #6D000E;
             border-style: solid;
@@ -232,7 +245,8 @@
             font-family: buxton sketch;
             font-size: 20;
             height: 65px;
-            width: 120px;
+            width: 100%;
+            max-width: 120px;
             border: 1px;
             border-color: #6D000E;
             border-style: solid;
@@ -250,7 +264,8 @@
             font-family: buxton sketch;
             font-size: 20;
             height: 45px;
-            width: 120px;
+            width: 100%;
+            max-width: 120px;
             border: 1px;
             border-color: #6D000E;
             border-style: solid;
@@ -401,6 +416,27 @@
    .scale:hover {
     transform: scale(1.2); 
    }
+
+   @media screen and (min-width:100px) and (max-width:1024px) {
+
+body #back{
+ margin-top:40px;
+ width: 100%;
+ margin: 0 auto;
+}
+
+
+
+body h1 #maintext #firstimag #secondimag #thirdimag    #fourthimag #fifthimag #siximag #sevenimag #eightimag #nineimag {
+ width:90%;
+ margin:0 auto;
+}
+ img {
+ max-width: 100%;
+ height: auto;
+ width: auto\9; 
+}
+} 
 
 
     </style>
