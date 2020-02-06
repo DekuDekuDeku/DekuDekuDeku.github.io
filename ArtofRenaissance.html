@@ -3,7 +3,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Искусство Возрождения</title>
     <style>
-       #back {
+        @media (min-width: 900px){
+
+          #back {
             position: absolute;
             height: 1000px;
             width: 100%;
@@ -12,31 +14,32 @@
             margin-right: 10px;
             overflow: hidden;
         }
-
-
-        #white {
+             #white {
             position: absolute;
             background-color: white;
             border: solid white;
-            height: 994px;
+            height: 992px;
             width: 824px;
             z-index: -1;
             opacity: 75%;
             margin-top: 258px;
-            margin-left: 233px;
+            margin-left: 420px;
         }
+
 
         #top {
             position: absolute;
             height: 258px;
-            width: 1300px;
+            width: 100%;
+            max-width: 1300px;
             z-index: -2;
         }
 
         #bottom {
             position: absolute;
             height: 189px;
-            width: 1300px;
+            width: 100%;
+            max-width: 1300px;
             z-index: -2;
             margin-top: 1270px;
         }
@@ -44,33 +47,37 @@
         #logo {
             position: absolute;
             height: 258px;
-            width: 298px;
+            max-width: 298px;
+            width: 100%;
             z-index: 10;
-            margin-left: 503px;
+            margin-left: 680px;
         }
 
         #left {
             position: absolute;
             height: 258px;
-            width: 344px;
+            max-width: 344px;
+            widows: 100%;
             z-index: -1;
-            margin-left: 50px;
+            margin-left: 20px;
         }
         
         #right {
             position: absolute;
             height: 258px;
-            width: 344px;
+            max-width: 344px;
+            width: 100%;
             z-index: -1;
-            margin-left: 906px;
+            margin-left: 1356px;
         }
 
         #menu {
             position: absolute;
-            width: 600px;
+            max-width: 600px;
+            width: 100%;
             z-index: 10;
             margin-top: 258px;
-            margin-left: 457px;
+            margin-left: 645px;
             display: flex;
             border: 5px;
             background-color: #FACD91;
@@ -293,7 +300,7 @@
             height: 60px;
             border-color: #a8e4a0;
             margin-top: 258px;
-            margin-left: 233px;
+            margin-left: 415px;
             border: 5px;
             border-style: ridge;
             border-color: darkgreen;
@@ -329,7 +336,20 @@
             border-style: solid;
         }
 
+        }
         
+        @media (min-width: 500px)
+    {
+        body {
+            display: flex;
+        }
+        #top, #bottom {
+            display: block;
+        }
+
+        }
+         
+    }
 
 
     </style>
@@ -346,7 +366,7 @@
        
     </div>
     <div id="bottom">
-        <img src="bottom.jpg"/>
+        <img src="bottom2.png"/>
     </div>
     <div id="logo"><a href="index.html">
         <img src="logo.jpg"/></a>
