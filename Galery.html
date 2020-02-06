@@ -4,7 +4,7 @@
     <title>Галерея</title>
     <style>
         
-
+@media (min-width: 900px){
 
           #back {
             position: absolute;
@@ -15,13 +15,12 @@
             margin-right: 10px;
             overflow: hidden;
         }
-            #white {
-            position: fixed;
+             #white {
+            position: absolute;
             background-color: white;
             border: solid white;
             height: 994px;
-            width: 100%;
-            max-width: 824px;
+            width: 824px;
             z-index: -1;
             opacity: 75%;
             margin-top: 258px;
@@ -321,10 +320,9 @@
 
        
         h1{
-           
+            font-size: 50;
             font-family: buxton sketch;
             left: 500px;
-            width:100%;
             top:330px;
             position: absolute;
         }
@@ -418,7 +416,9 @@
     transform: scale(1.2); 
    }
 
-   @media (min-width: 400px)
+}
+
+   @media (min-width: 500px)
     {
         body, #image  {
             display: flex;
@@ -426,26 +426,9 @@
         #top, #bottom {
             display: block;
         }
-        
-        h1{
-          
-            font-family: buxton sketch;
-            left: 500px;
-            top:330px;
-            width: 100%;
-            position: relative;
+
         }
-        
-        #maintext {
-            position: absolute;
-            text-align: justify;
-            font-family: buxton sketch;
-            font-size: 27;
-            z-index: 5;
-            top:430px;
-            line-height: 1;
-            left:260px;
-            width: 765px;
+         
     }
 
 
