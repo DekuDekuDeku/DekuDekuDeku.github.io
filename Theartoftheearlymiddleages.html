@@ -1,9 +1,11 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Искусство раннего средневековья</title>
+    <title>Галерея</title>
     <style>
-          #back {
+       
+
+                  #back {
             position: absolute;
             height: 1000px;
             width: 100%;
@@ -12,8 +14,7 @@
             margin-right: 10px;
             overflow: hidden;
         }
-
-       #white {
+             #white {
             position: absolute;
             background-color: white;
             border: solid white;
@@ -25,17 +26,20 @@
             margin-left: 233px;
         }
 
+
         #top {
             position: absolute;
             height: 258px;
-            width: 1300px;
+            width: 100%;
+            max-width: 1300px;
             z-index: -2;
         }
 
         #bottom {
             position: absolute;
             height: 189px;
-            width: 1300px;
+            width: 100%;
+            max-width: 1300px;
             z-index: -2;
             margin-top: 1270px;
         }
@@ -43,7 +47,8 @@
         #logo {
             position: absolute;
             height: 258px;
-            width: 298px;
+            max-width: 298px;
+            width: 100%;
             z-index: 10;
             margin-left: 503px;
         }
@@ -51,7 +56,8 @@
         #left {
             position: absolute;
             height: 258px;
-            width: 344px;
+            max-width: 344px;
+            widows: 100%;
             z-index: -1;
             margin-left: 50px;
         }
@@ -59,14 +65,16 @@
         #right {
             position: absolute;
             height: 258px;
-            width: 344px;
+            max-width: 344px;
+            width: 100%;
             z-index: -1;
             margin-left: 906px;
         }
 
         #menu {
             position: absolute;
-            width: 600px;
+            max-width: 600px;
+            width: 100%;
             z-index: 10;
             margin-top: 258px;
             margin-left: 457px;
@@ -83,7 +91,8 @@
             font-family: buxton sketch;
             font-size: 26;
             height: 30px;
-            width: 120px;
+            
+           width: 120px;
             border: 0px;
             border-right: 1px;
             border-color: #6D000E;
@@ -99,8 +108,8 @@
             font-family: buxton sketch;
             font-size: 26;
             height: 30px;
-            background: linear-gradient(to top, #FFFFFF, #FF8A00);
-            width: 120px;
+           
+           width: 120px;
             border: 0px;
             border-right: 1px;
             border-color: #6D000E;
@@ -116,6 +125,7 @@
             font-family: buxton sketch;
             font-size: 26;
             height: 30px;
+            
             width: 120px;
             border: 0px;
             border-right: 1px;
@@ -132,6 +142,7 @@
             font-family: buxton sketch;
             font-size: 26;
             height: 30px;
+          
             width: 120px;
             border: 0px;
             border-right: 1px;
@@ -141,7 +152,8 @@
             margin: 0; 
             padding-top: 0px;
             padding-left: 0;
-            
+            background: linear-gradient(to top, #FFFFFF, #FF8A00);
+        
         }
 
         #submenu_5 {
@@ -149,9 +161,9 @@
             font-family: buxton sketch;
             font-size: 26;
             height: 30px;
+            
             width: 120px;
             border: 0px;
-           
             border-right: 1px;
             border-color: #6D000E;
             border-style: solid;
@@ -212,8 +224,8 @@
             font-family: buxton sketch;
             font-size: 20;
             height: 25px;
-            width: 120px;
-            
+            width: 100%;
+            max-width: 120px;
             border: 1px;
             border-color: #6D000E;
             border-style: solid;
@@ -231,8 +243,8 @@
             font-family: buxton sketch;
             font-size: 20;
             height: 65px;
-            background: linear-gradient(to top, #FFFFFF, #FF8A00);
-            width: 120px;
+            width: 100%;
+            max-width: 120px;
             border: 1px;
             border-color: #6D000E;
             border-style: solid;
@@ -250,7 +262,8 @@
             font-family: buxton sketch;
             font-size: 20;
             height: 45px;
-            width: 120px;
+            width: 100%;
+            max-width: 120px;
             border: 1px;
             border-color: #6D000E;
             border-style: solid;
@@ -285,7 +298,7 @@
             background: linear-gradient(to top, #FFFFFF, #FFB660);
         }
 
-        #art {
+        #Galery {
             background: linear-gradient(to top, #FFFFFF, #76B649);
             display: inline-block;
             width: 200px;
@@ -304,33 +317,105 @@
             box-shadow: 3px 3px 3px 0px gray;
         }
 
-        
-
-        
+       
+        h1{
+            font-size: 50;
+            
+            left: 500px;
+            top:330px;
+            position: absolute;
+        }
         #maintext {
             position: absolute;
             text-align: justify;
-            font-family: buxton sketch;
-            font-size: 40;
+           
+            font-size: 27;
             z-index: 5;
-            top:860px;
-            
+            top:460px;
             line-height: 1;
             left:260px;
-            width: 770px;
-            
+            width: 765px;
         }
 
-       
-       #middleart {
+        #firstimag {
             position: absolute;
-            margin-left:260px;
-            margin-top: 430px;
+            margin-left:250px;
+            margin-top: 610px;
             border: 1px;
             border-style: solid;
         }
 
-        
+        #secondimag {
+            position: absolute;
+            margin-left:520px;
+            margin-top: 610px;
+            border: 1px;
+            border-style: solid;
+        }
+
+        #thirdimag {
+            position: absolute;
+            margin-left:790px;
+            margin-top: 610px;
+            border: 1px;
+            border-style: solid;
+        }
+
+        #fourthimag {
+            position: absolute;
+            margin-left:250px;
+            margin-top: 830px;
+            border: 1px;
+            border-style: solid;
+        }
+        #fifthimag{
+            position: absolute;
+            margin-left:520px;
+            margin-top: 830px;
+            border: 1px;
+            border-style: solid;
+        }
+
+         #siximag{
+            position: absolute;
+            margin-left:790px;
+            margin-top: 830px;
+            border: 1px;
+            border-style: solid;
+        }
+
+        #sevenimag{
+            position: absolute;
+            margin-left:250px;
+            margin-top: 1050px;
+            border: 1px;
+            border-style: solid;
+        }
+
+         #eightimag{
+            position: absolute;
+            margin-left:520px;
+            margin-top: 1050px;
+            border: 1px;
+            border-style: solid;
+        }
+
+        #nineimag{
+            position: absolute;
+            margin-left:790px;
+            margin-top: 1050px;
+            border: 1px;
+            border-style: solid;
+        }
+
+        .scale {
+    transition: 0.5s; 
+   }
+   .scale:hover {
+    transform: scale(1.2); 
+   }
+
+
 @media (max-width: 768px) {
 
             #back {
@@ -343,7 +428,7 @@
             #white {
                 background-color: white;
                 border: solid white;
-                height: 994px;
+                height: 2500px;
                 width: 100%;
                 z-index: -1;
                 opacity: 75%;
@@ -464,6 +549,7 @@
                 border-style: solid;
                 list-style: none; 
                 margin: 0; 
+                background: linear-gradient(to top, #FFFFFF, #FF8A00);
                 padding-top: 0px;
                 padding-left: 0;
                 
@@ -562,7 +648,6 @@
                 border-style: solid;
                 list-style: none; 
                 margin: 0; 
-                background: linear-gradient(to top, #FFFFFF, #FF8A00);
                 padding-top: 5px;
                 z-index: 20;
                 line-height: 1;
@@ -576,7 +661,6 @@
                 font-size: 20;
                 height: 45px;
                 width: 120px;
-                
                 border: 1px;
                 border-color: #6D000E;
                 border-style: solid;
@@ -611,7 +695,7 @@
                 background: linear-gradient(to top, #FFFFFF, #FFB660);
             }
 
-            #art {
+            #Galery {
                 background: linear-gradient(to top, #FFFFFF, #76B649);
                 display: inline-block;
                 width: 100%;
@@ -631,26 +715,99 @@
             }
 
           
-            #maintext {
+            h1{
+                font-size: 30;
+                
+                left: 70px;
+                top:560px;
+                overflow: hidden;
+            }
+
+           
+#maintext {
             position: absolute;
             text-align: justify;
-            font-family: buxton sketch;
-            font-size: 30;
+        
+            font-size: 23;
             z-index: 5;
-            top:660px;
-            
+            top:600px;
             line-height: 1;
-            left:10px;
-            width: 370px;
-            
+            left:30px;
+            width: 359px;
         }
 
-       
-       #middleart {
-           opacity: 0;
+        #firstimag {
+            position: absolute;
+            margin-left:60px;
+            margin-top: 820px;
+            border: 1px;
+            border-style: solid;
         }
 
+        #secondimag {
+            position: absolute;
+            margin-left:60px;
+            margin-top: 1030px;
+            border: 1px;
+            border-style: solid;
+        }
+
+        #thirdimag {
+            position: absolute;
+            margin-left:60px;
+            margin-top: 1240px;
+            border: 1px;
+            border-style: solid;
+        }
+
+        #fourthimag {
+            position: absolute;
+            margin-left:60px;
+            margin-top:1450px;
+            border: 1px;
+            border-style: solid;
+        }
+        #fifthimag{
+            position: absolute;
+            margin-left:60px;
+            margin-top:1660px;
+            border: 1px;
+            border-style: solid;
+        }
+
+         #siximag{
+            position: absolute;
+            margin-left:60px;
+            margin-top: 1870px;
+            border: 1px;
+            border-style: solid;
+        }
+
+        #sevenimag{
+            position: absolute;
+            margin-left:60px;
+            margin-top: 2080px;
+            border: 1px;
+            border-style: solid;
+        }
+
+         #eightimag{
+            position: absolute;
+            margin-left:60px;
+            margin-top: 2290px;
+            border: 1px;
+            border-style: solid;
+        }
+
+        #nineimag{
+            position: absolute;
+            margin-left:60px;
+            margin-top: 2500px;
+            border: 1px;
+            border-style: solid;
+        }
     </style>
+
 </head>
 <body>
 
@@ -679,7 +836,7 @@
     <div id="menu">
         <ul id="submenu_1"><a href="About us.html" id="link_1">О нас</a></ul>
         <ul id="submenu_2"><a href="Excursions.html" id="link_2">Экскурсии</a>
-           <li id="subsubmenu_1"><a href="Guides.html" id="sublink_1">Экскурсоводы</a></li>
+            <li id="subsubmenu_1"><a href="Guides.html" id="sublink_1">Экскурсоводы</a></li>
             <li id="subsubmenu_2"><a href="Theartoftheearlymiddleages.html" id="sublink_2">Искусство раннего средневековья</a></li>
             <li id="subsubmenu_3"><a href=ArtofRenaissance.html id="sublink_3">Искусство возрождения</a></li>
         </ul>
@@ -688,19 +845,27 @@
         <ul id="submenu_5"><a href="Prices.html" id="link_5">Цены</a></ul>
     </div>
 
-    <div id="art">Искусство Раннего Средневековья</div>
+    <div id="Galery">Галерея</div>
     
+   
+<h1>Наша фото-галерея</h1>
     
-
-    
-<div id="maintext"><p>Особенности средневекового искусства Западной и Центральной Европы определялись своеобразием процесса формирования феодального общества на территории бывшей Западной Римской империи. Он протекал иным путем, чем на Востоке. Гибель рабовладельческого строя была ускорена нашествием в конце 4 века варварских племен.
+<div id="maintext"><p>В этой подборке вы увидите фотографии музеев, архитектура которых так же впечатляет, как и хранящиеся в них экспонаты. Это не обязательно самые посещаемые и популярные музеи мира, но красота их экстерьеров и интерьеров, безусловно, впечатляет.
     </p></div>
+    <div id="image">
+    <div id="firstimag">  <img src="firstimag.jpg" width="250" height="200" alt="" class="scale"> </div>
+        <div id="secondimag"> <img src="secondimag.jpg" width="250" height="200" alt="" class="scale"> </div>
+            <div id="thirdimag"> <img src="thirdimag.jpg" width="250" height="200" alt="" class="scale"></div>
+                <div id="fourthimag"> <img src="fourthimag.jpg" width="250" height="200" alt="" class="scale"></div>
+                <div id="fifthimag"> <img src="fifthimag.jpg" width="250" height="200"alt="" class="scale"></div>
+                <div id="siximag"> <img src="siximag.jpeg" width="250" height="200" alt="" class="scale"></div>
+                <div id="sevenimag"> <img src="sevenimag.jpg" width="250" height="200"alt="" class="scale"></div>
 
-    
+                <div id="eightimag"> <img src="eightimag.jpg" width="250" height="200"alt="" class="scale"></div>
 
-    <div id="middleart"> <img src="middleart.jpg" width="777" height="432">
-    </div>
-     
+                 <div id="nineimag"> <img src="nineimag.jpg" width="250" height="200" alt="" class="scale"></div>
+             
+
 </div>
 </body>
 </html>
